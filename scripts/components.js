@@ -9,7 +9,7 @@ function getTemplate(filepath) {
         });
 }
 
-getTemplate('../templates/header.html').then(function (tmp) {
+getTemplate('/templates/header.html').then(function (tmp) {
     customElements.define(
         "wc-header",
         class Header extends HTMLElement {
@@ -20,7 +20,7 @@ getTemplate('../templates/header.html').then(function (tmp) {
             }
         });
 });
-getTemplate('../templates/nav.html').then(function (tmp) {
+getTemplate('/templates/nav.html').then(function (tmp) {
     customElements.define(
         "wc-nav",
         class Navigation extends HTMLElement {
@@ -31,7 +31,7 @@ getTemplate('../templates/nav.html').then(function (tmp) {
             }
         });
 });
-getTemplate('../templates/footer.html').then(function (tmp) {
+getTemplate('/templates/footer.html').then(function (tmp) {
     customElements.define(
         "wc-footer",
         class Footer extends HTMLElement {
