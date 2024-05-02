@@ -1,0 +1,39 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    /* background-color: #40801d; */
+    background-color: white;
+}
+
+main {
+    flex-grow: 1;
+}
+
+article {
+    margin-top: 6rem;
+    margin-inline: 10%;
+    margin-bottom: 2rem;
+    /* border-radius: 2rem;
+    padding: 2rem;
+    background-color: white; */
+    position: relative;
+}
+
+/* article::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    background-image: linear-gradient(160deg, #ff5197,#eae053,#57ddb2,#5ac3ff);
+    top: -2px;
+    left: -2px;
+    z-index: -1;
+    border-radius: inherit;
+} */

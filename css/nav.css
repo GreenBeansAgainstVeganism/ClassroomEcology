@@ -1,0 +1,90 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    height: 2rem;
+    background-color: white;
+    position: relative;
+}
+
+/* :host::before {
+    content: "";
+    position: absolute;
+    display: block;
+    
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(160deg, #ff5197,#eae053,#57ddb2,#5ac3ff);
+    background-position: 0;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+} */
+
+/* :host::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 100%;
+    z-index: 1;
+
+    width: 100%;
+    height: 6rem;
+    background-image: url("../assets/fade.svg");
+    background-size: cover;
+} */
+
+* {
+    font-family: 'Lucida Console', 'Courier New', Courier, monospace;
+}
+
+ul {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #dd22a5;
+    /* background: #333333; */
+    margin-block: 2px;
+}
+
+li a {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 1rem;
+    border-inline: 2px solid transparent;
+
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14pt;
+    color: white;
+    /* text-shadow: 0 0 4px #00000088; */
+
+    transition: background-color 0.15s;
+}
+
+li a:hover {
+    /* background-color: #555555; */
+    background-color: #00000044;
+}
+
+li a::before {
+    content: '->';
+    margin-inline-end: 0.5rem;
+    opacity: 0;
+}
+li a::after {
+    content: '<-';
+    margin-inline-start: 0.5rem;
+    opacity: 0;
+}
+
+li a:hover::before {
+    opacity: 1;
+}
+li a:hover::after {
+    opacity: 1;
+}
