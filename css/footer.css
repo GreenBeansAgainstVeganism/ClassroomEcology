@@ -1,5 +1,18 @@
 :host {
     height: 2rem;
-    background-color: black;
+    background-color: #538a07;
     color: white;
+    display: flex;
+    align-items: center;
+    padding-inline: 1rem;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+* {
+    font-family: 'Lucida Console', 'Courier New', Courier, monospace;
+}
+
+:host > * {
+    
 }

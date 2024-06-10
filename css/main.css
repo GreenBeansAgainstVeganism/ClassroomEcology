@@ -2,6 +2,11 @@ html {
     height: 100%;
 }
 
+/* Keeps page from rendering before web components are loaded */
+html:has(:not(:defined)){
+    opacity: 0;
+}
+
 body {
     margin: 0;
     display: flex;
