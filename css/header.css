@@ -1,9 +1,15 @@
 :host {
     height: 6rem;
-    display: flex;
     background-color: #085d9f;
     
+}
+
+#header {
+    position: relative;
+    height: 100%;
+    display: flex;
     padding: 1rem;
+    overflow: clip;
 }
 
 h1 {
@@ -32,4 +38,16 @@ h1::after {
     100% {
         opacity: 0;
     }
+}
+
+#deco {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("../assets/circuit_deco.svg");
+    background-size: auto 120%;
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
 }

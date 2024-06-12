@@ -20,6 +20,7 @@ getTemplate('./templates/header.html').then(function (tmp) {
             }
         });
 });
+
 getTemplate('./templates/nav.html').then(function (tmp) {
     customElements.define(
         "wc-nav",
@@ -31,6 +32,7 @@ getTemplate('./templates/nav.html').then(function (tmp) {
             }
         });
 });
+
 getTemplate('./templates/footer.html').then(function (tmp) {
     customElements.define(
         "wc-footer",
